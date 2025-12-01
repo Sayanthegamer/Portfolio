@@ -158,6 +158,7 @@ button:focus-visible {
 
 .animate-blob {
   animation: blob 10s infinite;
+  will-change: transform;
 }
 
 .animation-delay-2000 {

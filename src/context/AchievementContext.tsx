@@ -13,6 +13,7 @@ interface Achievement {
 interface AchievementContextType {
     unlockedAchievements: AchievementId[];
     unlockAchievement: (id: AchievementId) => void;
+    resetAchievements: () => void;
 }
 
 const AchievementContext = createContext<AchievementContextType | undefined>(undefined);
@@ -60,20 +61,30 @@ export const AchievementProvider = ({ children }: { children: ReactNode }) => {
             setUnlockedAchievements((prev) => [...prev, id]);
             setCurrentToast(achievements[id]);
 
-            // Play a subtle sound
-            const audio = new Audio('/achievement.mp3'); // We'll need to add this or use a synth
-            audio.volume = 0.5;
-            audio.play().catch(() => { }); // Ignore auto-play errors
+            // Play a subtle sound (safely)
+            try {
+                const audio = new Audio('/achievement.mp3');
+                audio.volume = 0.5;
+                audio.play().catch((e) => console.log('Audio play failed (expected if no interaction/file):', e));
+            } catch (e) {
+                console.log('Audio initialization failed:', e);
+            }
 
-            // Hide toast after 3 seconds
+            // Hide toast after 4 seconds
             setTimeout(() => {
                 setCurrentToast(null);
             }, 4000);
         }
     };
 
+    const resetAchievements = () => {
+        setUnlockedAchievements([]);
+        localStorage.removeItem('achievements');
+        console.log('Achievements reset');
+    };
+
     return (
-        <AchievementContext.Provider value={{ unlockedAchievements, unlockAchievement }}>
+        <AchievementContext.Provider value={{ unlockedAchievements, unlockAchievement, resetAchievements }}>
             {children}
             <AchievementToast achievement={currentToast} onClose={() => setCurrentToast(null)} />
         </AchievementContext.Provider>

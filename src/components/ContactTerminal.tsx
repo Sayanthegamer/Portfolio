@@ -10,11 +10,12 @@ const commands = {
     github: 'https://github.com/Sayanthegamer',
     instagram: 'https://www.instagram.com/nxt_sayan0/',
     clear: 'clear',
+    reset: 'Resets all achievements and local storage.',
 };
 
 const ContactTerminal = () => {
     const [input, setInput] = useState('');
-    const { unlockAchievement } = useAchievements();
+    const { unlockAchievement, resetAchievements } = useAchievements();
     const [history, setHistory] = useState<{ type: 'input' | 'output'; content: string }[]>([
         { type: 'output', content: 'Welcome to Sayan\'s Terminal v1.0.0' },
         { type: 'output', content: 'Type "help" to see available commands.' },
@@ -34,6 +35,12 @@ const ContactTerminal = () => {
 
         if (trimmedCmd === 'clear') {
             setHistory([]);
+            return;
+        }
+
+        if (trimmedCmd === 'reset') {
+            resetAchievements();
+            setHistory([...history, { type: 'input', content: cmd }, { type: 'output', content: 'Achievements reset successfully.' }]);
             return;
         }
 

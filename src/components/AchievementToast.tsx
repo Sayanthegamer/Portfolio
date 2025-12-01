@@ -21,7 +21,7 @@ const AchievementToast = ({ achievement, onClose }: AchievementToastProps) => {
                     animate={{ x: "-50%", y: 0, opacity: 1, scale: 1 }}
                     exit={{ x: "-50%", y: 100, opacity: 0, scale: 0.9 }}
                     transition={{ type: 'spring', stiffness: 400, damping: 25 }}
-                    className="fixed bottom-8 left-1/2 z-50 flex items-center gap-4 bg-slate-900/90 backdrop-blur-md border border-amber-500/30 px-6 py-4 rounded-full shadow-[0_0_30px_rgba(245,158,11,0.2)]"
+                    className="fixed bottom-8 left-1/2 z-[100] flex items-center gap-4 bg-slate-900/90 backdrop-blur-md border border-amber-500/30 px-6 py-4 rounded-full shadow-[0_0_30px_rgba(245,158,11,0.2)]"
                 >
                     <div className="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-2xl">
                         {achievement.icon}
