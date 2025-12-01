@@ -74,7 +74,7 @@ const ContactTerminal = () => {
                             <div className="w-3 h-3 rounded-full bg-yellow-500" />
                             <div className="w-3 h-3 rounded-full bg-green-500" />
                         </div>
-                        <div className="flex items-center gap-2 text-slate-400 text-xs whitespace-nowrap overflow-hidden text-ellipsis">
+                        <div className="flex items-center gap-2 text-slate-400 text-xs whitespace-nowrap overflow-hidden text-ellipsis min-w-0">
                             <Terminal size={14} className="shrink-0" />
                             <span className="truncate">visitor@sayan-portfolio:~</span>
                         </div>
