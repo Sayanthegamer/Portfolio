@@ -4,10 +4,11 @@ import { Terminal } from 'lucide-react';
 import { useAchievements } from '../context/AchievementContext';
 
 const commands = {
-    help: 'Available commands: email, github, whoami, clear',
+    help: 'Available commands: email, github, instagram, whoami, clear',
     whoami: 'Sayan - Full-stack Developer, AI Enthusiast, and Tech Explorer.',
     email: 'mailto:sayanbnk2008@gmail.com', // Replace with actual email if different
     github: 'https://github.com/Sayanthegamer',
+    instagram: 'https://www.instagram.com/nxt_sayan0/',
     clear: 'clear',
 };
 
@@ -39,7 +40,7 @@ const ContactTerminal = () => {
         if (commands[trimmedCmd as keyof typeof commands]) {
             unlockAchievement('hacker');
             const output = commands[trimmedCmd as keyof typeof commands];
-            if (trimmedCmd === 'email' || trimmedCmd === 'github') {
+            if (trimmedCmd === 'email' || trimmedCmd === 'github' || trimmedCmd === 'instagram') {
                 newHistory.push({ type: 'output', content: `Opening ${trimmedCmd}...` });
                 window.open(output, '_blank');
             } else {

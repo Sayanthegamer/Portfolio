@@ -1,4 +1,4 @@
-import { Github, Mail } from 'lucide-react';
+import { Github, Mail, Instagram } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useAchievements } from '../context/AchievementContext';
 
@@ -13,6 +13,10 @@ const Footer = () => {
             >
                 <a href="https://github.com/Sayanthegamer" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-primary transition-colors">
                     <Github size={24} />
+                </a>
+
+                <a href="https://www.instagram.com/nxt_sayan0/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-pink-500 transition-colors">
+                    <Instagram size={24} />
                 </a>
 
                 <a href="mailto:sayanbnk2008@gmail.com" className="text-slate-400 hover:text-primary transition-colors">
