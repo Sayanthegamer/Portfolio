@@ -58,7 +58,7 @@ const Hobbies = () => {
                     viewport={{ once: true }}
                     className="text-3xl md:text-5xl font-bold mb-16 text-center font-serif"
                 >
-                    What I Do
+                    My Interests
                 </motion.h2>
 
                 <div className="grid grid-cols-2 gap-1 md:flex md:flex-wrap md:justify-center md:gap-6">
@@ -69,7 +69,7 @@ const Hobbies = () => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="w-full md:w-[280px] h-[160px] md:h-[320px]"
+                            className="w-full md:w-[280px] h-[200px] md:h-[320px]"
                         >
                             <FlipCard
                                 frontContent={
