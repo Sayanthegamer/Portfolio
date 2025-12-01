@@ -39,7 +39,7 @@ const TechStack = () => {
                 {/* Row 1: Left to Right */}
                 <div className="flex overflow-hidden group">
                     <motion.div
-                        className="flex gap-8 px-4"
+                        className="flex gap-4 md:gap-8 px-4"
                         animate={{ x: [0, -1000] }}
                         transition={{
                             repeat: Infinity,
@@ -62,7 +62,7 @@ const TechStack = () => {
                 {/* Row 2: Right to Left */}
                 <div className="flex overflow-hidden group">
                     <motion.div
-                        className="flex gap-8 px-4"
+                        className="flex gap-4 md:gap-8 px-4"
                         animate={{ x: [-1000, 0] }}
                         transition={{
                             repeat: Infinity,

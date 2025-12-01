@@ -18,7 +18,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-          className="text-6xl md:text-8xl lg:text-9xl font-bold mb-8 pb-2 bg-clip-text text-transparent bg-gradient-to-b from-slate-100 to-slate-500 font-serif"
+          className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-bold mb-8 pb-2 bg-clip-text text-transparent bg-gradient-to-b from-slate-100 to-slate-500 font-serif"
         >
           Sayan
         </motion.h1>

@@ -83,7 +83,7 @@ const ContactTerminal = () => {
 
                     {/* Terminal Body */}
                     <div
-                        className="p-6 h-[400px] overflow-y-auto cursor-text"
+                        className="p-4 md:p-6 h-[300px] md:h-[400px] overflow-y-auto cursor-text"
                         onClick={() => inputRef.current?.focus()}
                     >
                         <div className="space-y-2">
@@ -110,7 +110,7 @@ const ContactTerminal = () => {
                                 type="text"
                                 value={input}
                                 onChange={(e) => setInput(e.target.value)}
-                                className="flex-1 bg-transparent border-none outline-none text-slate-100 placeholder-slate-600"
+                                className="flex-1 bg-transparent border-none outline-none text-base md:text-sm text-slate-100 placeholder-slate-600"
                             />
                         </form>
                         <div ref={bottomRef} />

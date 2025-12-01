@@ -51,7 +51,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                         </button>
 
                         {/* Hero Image */}
-                        <div className="relative h-64 md:h-80 w-full overflow-hidden">
+                        <div className="relative h-48 md:h-80 w-full overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent z-10" />
                             <img
                                 src={project.image}
@@ -76,7 +76,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                         </div>
 
                         {/* Content Body */}
-                        <div className="p-6 md:p-8 space-y-8">
+                        <div className="p-4 md:p-8 space-y-8">
                             {/* Description */}
                             <div>
                                 <h3 className="text-xl font-bold text-slate-200 mb-3">Overview</h3>

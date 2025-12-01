@@ -78,7 +78,7 @@ const Timeline = () => {
                         />
                     </div>
 
-                    <div className="space-y-12 md:space-y-24">
+                    <div className="space-y-8 md:space-y-24">
                         {milestones.map((milestone, index) => (
                             <motion.div
                                 key={index}
