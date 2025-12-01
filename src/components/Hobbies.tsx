@@ -51,7 +51,7 @@ const hobbies = [
 const Hobbies = () => {
     return (
         <section id="hobbies" className="section">
-            <div className="w-full max-w-6xl px-4">
+            <div className="w-full max-w-6xl px-2 md:px-4">
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ const Hobbies = () => {
                     What I Do
                 </motion.h2>
 
-                <div className="grid grid-cols-2 gap-2 md:flex md:flex-wrap md:justify-center md:gap-6">
+                <div className="grid grid-cols-2 gap-1.5 md:flex md:flex-wrap md:justify-center md:gap-6">
                     {hobbies.map((hobby, index) => (
                         <motion.div
                             key={hobby.name}
