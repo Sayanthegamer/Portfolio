@@ -69,7 +69,7 @@ const Hobbies = () => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="w-full sm:w-[280px] h-[320px]"
+                            className="w-[280px] h-[320px]"
                         >
                             <FlipCard
                                 frontContent={

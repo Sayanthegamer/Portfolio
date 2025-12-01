@@ -74,11 +74,11 @@ const ContactTerminal = () => {
                             <div className="w-3 h-3 rounded-full bg-yellow-500" />
                             <div className="w-3 h-3 rounded-full bg-green-500" />
                         </div>
-                        <div className="flex items-center gap-2 text-slate-400 text-xs">
-                            <Terminal size={14} />
-                            <span>visitor@sayan-portfolio:~</span>
+                        <div className="flex items-center gap-2 text-slate-400 text-xs whitespace-nowrap overflow-hidden text-ellipsis">
+                            <Terminal size={14} className="shrink-0" />
+                            <span className="truncate">visitor@sayan-portfolio:~</span>
                         </div>
-                        <div className="w-10" /> {/* Spacer for centering */}
+                        <div className="w-10 hidden md:block" /> {/* Spacer for centering */}
                     </div>
 
                     {/* Terminal Body */}
