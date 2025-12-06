@@ -50,7 +50,7 @@ Want to see the code in action?
 
 ```bash
 git clone https://github.com/Sayanthegamer/Sayanthegamer.git
-cd portfolio
+cd sayanthegamer
 npm install
 npm run dev
 ```
