@@ -62,7 +62,7 @@ const projects = [
             'Seamless, Dreamlike User Interface'
         ],
         tech: ['React', 'Google GenAI', 'Framer Motion', 'Vite'],
-        github: 'https://github.com/Sayanthegamer/Aether',
+        github: 'https://github.com/Sayanthegamer/a-e-t-h-e-r',
         demo: 'https://a-e-t-h-e-r-inky.vercel.app/',
         image: '/aether-preview.png',
     },
