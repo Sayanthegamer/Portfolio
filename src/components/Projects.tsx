@@ -7,6 +7,26 @@ import { useAchievements } from '../context/AchievementContext';
 
 const projects = [
     {
+        title: 'Kron0',
+        description: 'A modern, neo-glassmorphism inspired productivity companion designed for students.',
+        longDescription: 'Kron0 is a modern, neo-glassmorphism inspired productivity companion designed for students. It combines a powerful focus timer, a smart weekly schedule managed via Drag & Drop or simple clicks, and detailed productivity insights—all in a beautifully animated interface.',
+        challenges: [
+            'Firebase API calling',
+            'Optimising performance',
+            'Designing the whole thing'
+        ],
+        features: [
+            'Focus Timer',
+            'Smart Schedule',
+            'Productivity Stats',
+            'Task Management'
+        ],
+        tech: ['React', 'TypeScript', 'Firebase', 'Tailwind CSS', 'Framer Motion', 'Vite'],
+        github: 'https://github.com/Sayanthegamer/kron0',
+        demo: 'https://kron0.vercel.app/',
+        image: '/kron0-preview.png',
+    },
+    {
         title: 'Student Manager Pro',
         description: 'A comprehensive educational platform for managing student records, fees, and academic performance.',
         longDescription: 'Student Manager Pro is a robust administrative tool designed for educational institutions. It streamlines the complex process of student data management, from admission to graduation. The system provides intuitive dashboards for tracking attendance, managing fee payments, and generating detailed academic reports.',
